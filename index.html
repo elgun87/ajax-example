@@ -25,7 +25,7 @@
             $('#load').on('click', function(){
                 console.log('hello');
                     $.ajax({
-                    url: '/ajax-example/index.html',
+                    url: '/ajax-example/items.html',
                     dataType: 'json',
                 }).done(function(cavab) {
                     cavab.sekiller.forEach(function(value, index) {
