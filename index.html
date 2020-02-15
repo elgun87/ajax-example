@@ -33,13 +33,15 @@
 
         // });
         $(document).ready(function(){
-            $.ajax({
-                url: '/ajax-example/items.html',
-                dataType: 'jason'
-            }).done(function(response){
-                $('h1').css(response.h1);
+            $('#load').on('click', function(){
+                $.ajax({
+                    url: '/ajax-example/items.html',
+                    dataType: 'jason'
+                }).done(function(response){
+                    $('h1').css(response.h1);
+                });
             });
-        })
+        });
     </script>
 </body>
 </html>
