@@ -21,17 +21,25 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
-        $(document).ready(function(){
-                $.ajax({
-                url: '/ajax-example/items.html',
-                dataType: 'json',
-            }).done(function(cavab) {
-                cavab.sekiller.forEach(function(value, index) {
-                    $('#siyahi').append('<img src="' + value + ' ">');
-                });
-            });
+        // $(document).ready(function(){
+        //     $.ajax({
+        //         url: '/ajax-example/items.html',
+        //         dataType: 'json',
+        //     }).done(function(cavab) {
+        //         cavab.sekiller.forEach(function(value, index) {
+        //             $('#siyahi').append('<img src="' + value + ' ">');
+        //         });
+        //     });
 
-        });
+        // });
+        $(document).ready(function(){
+            $.ajax({
+                url: '/ajax-example/items.html',
+                dataType: 'jason'
+            }).done(function(response){
+                $('h1').css(response.h1);
+            });
+        })
     </script>
 </body>
 </html>
