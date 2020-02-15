@@ -25,7 +25,7 @@
         $(document).ready(function(){
             $.ajax({
                 url: '/ajax_example/items.html',
-                type: 'JSON',
+                dataType: 'JSON',
             }).done(function(cavab) {
                 cavab.sekiller.forEach(function(value, index) {
                     $('#siyahi').append('<img src="' + value + '">');
