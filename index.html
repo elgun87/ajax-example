@@ -27,7 +27,9 @@
                     url: "/ajax-example/items.html",
                     dataType: "json"
                 }).done(function(response){
-                    console.log(response);
+                    response.images.forEach(function(value,index){
+                        $('#siyahi').append("<img src="+ value + " >");
+                    });
                 });
             });
         });
