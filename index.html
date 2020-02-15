@@ -26,7 +26,7 @@
                 console.log('hello');
                     $.ajax({
                     url: '/ajax-example/index.html',
-                    dataType: 'JSON',
+                    dataType: 'json',
                 }).done(function(cavab) {
                     cavab.sekiller.forEach(function(value, index) {
                         $('#siyahi').append('<img src="' + value + ' ">');
