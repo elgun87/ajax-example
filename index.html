@@ -24,7 +24,7 @@
         $(document).ready(function(){
             $('#load').on('click', function(){
                 $.ajax({
-                    url: "/ajax-example/blob/master/items.html",
+                    url: "/ajax-example/items.html",
                     dataType: "json"
                 }).done(function(response){
                     console.log(response);
