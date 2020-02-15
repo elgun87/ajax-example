@@ -34,11 +34,13 @@
         // });
         $(document).ready(function(){
             $('#load').on('click', function(){
-                $.ajax({
+                $.ajax(
+                    {
                     url: '/ajax-example/items.html',
                     dataType: 'jason'
-                }).done(function(response){
-                    $('body h2').css(response.h1);
+                    }
+                ).done(function(response){
+                    $('body h2').css(response.h2);
                 });
             });
         });
