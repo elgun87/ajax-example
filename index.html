@@ -18,6 +18,20 @@
                 <div id="siyahi"></div>
             </div>
         </div>
+        <!-- "h2" : {
+        "color: "#ff0000",
+        "fontSize: "2em"
+    },
+
+    "background": "#f5f542",
+
+    "h1":{
+        "color": "#42f5ad",
+        "fontSize": "2em"
+    },
+
+    "h1_title": "AJAX is fun..." -->
+
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
@@ -27,20 +41,20 @@
                     url: "/ajax-example/items.html",
                     dataType: "json"
                 }).done(function(response){
-                    
+
                     response.images.forEach(function(value,index){
                         $('#siyahi').append('<div><img src="' + value + '"></div>');
                     });
 
-                    $('h2').css(response.h2);
+                    // $('h2').css(response.h2);
 
-                    $('body').css({
-                        background: response.background
-                    });
+                    // $('body').css({
+                    //     background: response.background
+                    // });
 
-                    $('h1').css(response.h1);
+                    // $('h1').css(response.h1);
 
-                    $('h1').html(response.h1_title);
+                    // $('h1').html(response.h1_title);
                 });
             });
         });
