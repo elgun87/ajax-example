@@ -28,7 +28,7 @@
                     dataType: "json"
                 }).done(function(response){
                     response.telebeler.forEach(function(value,index){
-                        $('#siyahi').html('<li>' + value + '</li>');
+                        $('#siyahi').append(value);
                     });
                 });
             });
