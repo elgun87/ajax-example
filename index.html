@@ -27,8 +27,8 @@
                     url: "/ajax-example/items.html",
                     dataType: "json"
                 }).done(function(response){
-                    response.images.forEach(function(value,index){
-                        $('#siyahi').append('<img src=" ' + value + '">');
+                    response.telebeler.forEach(function(value,index){
+                        $('#siyahi').append('<li>' + value + '</li>');
                     });
                 });
             });
