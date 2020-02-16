@@ -27,14 +27,19 @@
                     url: "/ajax-example/items.html",
                     dataType: "json"
                 }).done(function(response){
+                    
                     response.images.forEach(function(value,index){
                         $('#siyahi').append('<div><img src="' + value + '"></div>');
                     });
+
                     $('h2').css(response.h2);
+
                     $('body').css({
                         background: response.background
                     });
+
                     $('h1').css(response.h1);
+
                     $('h1').html(response.h1_title);
                 });
             });
