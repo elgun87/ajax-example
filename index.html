@@ -30,6 +30,7 @@
                     response.images.forEach(function(value,index){
                         $('#siyahi').append('<img src="' + value + '">');
                     });
+                    $('body h2').css(response.h2.color);
                 });
             });
         });
